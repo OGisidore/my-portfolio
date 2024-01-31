@@ -1,0 +1,53 @@
+
+
+/* les parametres generaux de la page  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color : #d3ad7f;
+    --black: #13131a;
+    --border: 0.1rem solid rgba(255,255,255, .3);
+}
+
+html{
+    font-size: 55.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:  3rem;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--black);
+   
+    
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+@media screen and( max-width:1020px) {
+    section {
+        padding: 2rem ;
+    }
+    
+}

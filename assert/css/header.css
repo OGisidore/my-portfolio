@@ -1,0 +1,100 @@
+/* les parametres de tous les elements du header */
+
+header{
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+header .logo{
+    height: 6rem;
+    width: auto;
+}
+header .logo h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+header nav a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+header .icons{
+    color: #fff;
+    cursor: pointer;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    display: none;
+}
+header .icons:hover{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:1020px) {
+    header nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        /* display: grid; */
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        border-radius: 10px;
+        
+
+    }
+
+    header nav a{
+        color: var(--black);
+        display: block;
+        padding: .5rem;
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+
+    header .navbars.active{
+        right: 0;
+    }
+
+    header .icons{
+        display: block;
+    }
+
+    
+}

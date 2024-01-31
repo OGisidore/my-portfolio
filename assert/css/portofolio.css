@@ -1,0 +1,76 @@
+
+
+/* portofolio */
+
+
+.portofolio{
+    max-width: 98%;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portofolio .projets{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portofolio .projets .projet1{
+    max-width: 89rem;
+    padding: 1.5rem 2.3rem;
+    border-bottom: var(--border);
+    border-right: var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    gap: 1.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+.portofolio .projets .projet1:hover{
+    transition: 1s;
+    box-shadow: .1rem .1rem 2rem 1rem var(--main-color);
+}
+
+.portofolio .projets .projet1 img{
+    margin: 5rem 4rem 2rem 4rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20rem;
+    cursor: pointer;
+    
+}
+
+.portofolio .projets .projet1 img:hover{
+    scale: 110%;
+}
+
+.portofolio .projets .projet1 .desc{
+    max-width: 49rem;
+    min-height: 20rem;
+    padding: 2rem;
+
+}
+.portofolio .projets .projet1 .desc h3{
+    font-size: 3rem;
+}
+.portofolio .projets .projet1 .desc p{
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+    margin: 2rem;
+}
+.portofolio .projets .projet1 .desc p:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+   color: var(--main-color);
+}
+.portofolio .projets .projet1 .desc .star{
+    font-size: 2rem;
+    color: var(--main-color);
+}

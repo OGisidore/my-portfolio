@@ -1,0 +1,122 @@
+.about-me{
+    min-height: 100vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-me .abtContent{
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+    
+    width: calc(100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+
+}
+ .title{
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-items: center;
+   min-width: 22rem;
+    height: 12rem;
+   border: var(--border);
+   margin: 10rem 0;
+}
+ .title h2{
+    text-align: center;
+    font-size: 5rem;
+    position: absolute;
+    color:var(--main-color );
+    z-index:1 ;
+}
+
+ .title::before{
+    content: '';
+    width: 50%;
+    height: 100rem;
+    
+   
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: var(--main-color);
+    animation: animate 2s linear infinite;
+    
+}
+
+@keyframes animate {
+   from{
+    transform: rotate(0deg);
+   }   
+   to {
+    transform: rotate(360deg);
+    filter: hue-rotate(-360deg) saturate(100%);
+   } 
+}
+ .title::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background-color: var(--black);
+    
+    
+}
+
+
+
+.about-me .abtContent p{
+    width: 65%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.about-me .abtContent p span{
+    position: relative;
+    max-width: 40rem;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    margin: 5rem;
+    color: var(--main-color);
+   
+}
+
+.about-me .abtContent p span::after{
+    content: '';
+    position: absolute;
+    width: 31rem;
+    height: .1rem;
+    bottom: 0;
+    background-color: #fff;
+    animation:  anim 2s  linear infinite;
+}
+.about-me .abtContent p .spa2::after{
+    content: '';
+    width: 23rem;
+    height: .1rem;
+    position: absolute;
+    background-color: #fff;
+    
+   
+}
+@keyframes anim{
+    from{
+        width: 5rem;
+    }
+}
+
+
+@media screen  and (max-width: 820px) {
+    
+.about-me .abtContent p{
+    width: 95%;
+    text-align: justify;
+}
+    
+}
