@@ -1,0 +1,8 @@
+.resume{
+    max-width: 98%;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

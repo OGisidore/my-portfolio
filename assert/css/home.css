@@ -7,20 +7,20 @@
 }
 
 
-.home-section .slider .article{
+.home-section .slider .slide{
     position: absolute;
     inset: 0 0 0 0;
     overflow: hidden;
     opacity: 0;
     transition: .5s;
 }
-.home-section .slider .article img{
+.home-section .slider .slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
-.home-section .slider .article::after{
+.home-section .slider .slide::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@
         to top right, #000 20%, transparent
     );
 }
-.home-section .slider .article .content{
+.home-section .slider .slide .content{
     position: absolute;
     top:  40%;
     left: 10%;
@@ -41,18 +41,18 @@
     color: #fff;
 }
 
-.home-section .slider .article .content h2{
+.home-section .slider .slide .content h2{
     font-size: 5rem;
     margin: 0;
 
 }
 
-.home-section .slider .article .content h2 span{
+.home-section .slider .slide .content h2 span{
     
     color: var(--main-color);
 }
 
-.home-section .slider .article .content h3{
+.home-section .slider .slide .content h3{
     font-size: 2.5rem;
     text-transform: uppercase;
     
@@ -61,19 +61,19 @@
 
 }
 
-.home-section .slider .article .content p{
+.home-section .slider .slide .content p{
     font-size: 1.5rem;
     text-align: justify; 
     margin: 0;
 
 }
 
-.home-section .slider .article.active{
+.home-section .slider .slide.active{
     opacity: 1;
     z-index: 10;
 
 }
-/* .home-section .slider .article.active  */
+/* .home-section .slider .slide.active  */
 
 
 @keyframes showCont {
@@ -85,18 +85,18 @@
     
 }
 
-.home-section .slider .article.active .content h2,
-.home-section .slider .article.active .content h3,
-.home-section .slider .article.active .content p{
+.home-section .slider .slide.active .content h2,
+.home-section .slider .slide.active .content h3,
+.home-section .slider .slide.active .content p{
     transform: translateY(5rem);
     filter: blur(1rem);
     opacity: 0;
     animation:  showCont .5s .7s ease-in-out 1 forwards;
    
 }
-.home-section .slider .article.active .content h3{
+.home-section .slider .slide.active .content h3{
     animation-delay: 1s;
 }
-.home-section .slider .article.active .content p{
+.home-section .slider .slide.active .content p{
     animation-duration: 1.3s;
 }

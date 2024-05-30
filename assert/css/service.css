@@ -1,5 +1,5 @@
 
-.services{
+.skills{
     position: relative;
     min-height: 100vh;
     color: #fff;
@@ -13,44 +13,45 @@
     
 }
 
-.services .theServices{
+.skills
+    .theskills{
     max-width: 98%;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.services .theServices .website{
+.skills .theskills .skill{
     padding: 5rem;
     text-align: center;
     border: var(--border);
     cursor: pointer;
 }
-.services .theServices .website img{
+.skills .theskills .skill img{
     height: 11rem;
 }
-.services .theServices .website h3{
+.skills .theskills .skill h3{
     font-size: 3rem;
-    padding: 1rem 0;
+    padding: 1rem ;
 }
-.services .theServices .website p{
+.skills .theskills .skill p{
     font-size: 2.5rem;
     padding: .5rem 0;
 }
-.services .theServices .website p span{
+.skills .theskills .skill p span{
     font-size: 1.5rem;
     text-decoration: line-through;
 }
-.services .theServices .website:hover{
+.skills .theskills .skill:hover{
     background-color: #fff;
     transition: 1s;
     /* scale: 110%; */
 }
-.services .theServices .website:hover img{
+.skills .theskills .skill:hover img{
     scale: 120%;
     transition: 1s;
 }
-.services .theServices .website:hover >*{
+.skills .theskills .skill:hover >*{
     color: var(--black);
     scale: 110%;
     transition: 1s;

@@ -20,11 +20,12 @@
 
 }
  .title{
+    padding: 1rem;
     overflow: hidden;
     position: relative;
     display: grid;
     place-items: center;
-   min-width: 22rem;
+   min-width: 25rem;
     height: 12rem;
    border: var(--border);
    margin: 10rem 0;
